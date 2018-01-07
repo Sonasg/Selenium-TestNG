@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test" ><!-- thread-count="2" parallel="methods" -->
+
+<!-- Use for parallel execution -->
+
+<!-- <test name="TestParallel">
+<classes>
+<class name="test.Parallel_Execution">
+</class>
+</classes>
+</test> -->
+
+<!-- Use for executing all irrespective of the group -->
+
+<!-- <test name="TestAll">
+<classes>
+<class name="test.Grouping">
+</class>
+</classes>
+</test> -->
+
+<!-- Use for execution based on group -->
+
+<!-- <test name="TestGrouping">
+<groups>
+<run>
+<include name="Test1"></include>
+</run>
+</groups>
+<classes>
+<class name="test.Grouping">
+</class>
+</classes>
+</test> -->
+
+<!-- Use for excluding some methods-->
+
+<!-- <test name="TestGrouping_Exclude">
+<classes>
+<class name="test.Grouping">
+<methods>
+<exclude name="test_c"></exclude>
+</methods>
+</class>
+</classes>
+</test> -->
+
+<!-- Use for including some methods -->
+
+<test name="TestGrouping_Include">
+<classes>
+<class name="test.Grouping">
+<methods>
+<include name="test_a"></include>
+<include name="test_b"></include>
+</methods>
+</class>
+</classes>
+</test>
+
+</suite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test]">
+  <test name="TestAll(failed)">
+    <classes>
+      <class name="test.Grouping">
+        <methods>
+          <include name="test_b"/>
+          <include name="test_a"/>
+        </methods>
+      </class> <!-- test.Grouping -->
+    </classes>
+  </test> <!-- TestAll(failed) -->
+</suite> <!-- Failed suite [Test] -->
